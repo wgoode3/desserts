@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Dessert from './Components/Dessert';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="card my-5">
+        <div className="card-header bg-dark text-light">Desserts App</div>
+        <div className="card-body">
+          <ul className="list-group">
+            <li className="list-group-item">Menu:</li>
+            <Dessert name="Ice Cream Sunday" price="4.50" />
+            <Dessert name="Tiramasu" price="6.25" />
+            <Dessert name="Cheesecake" price="7.00" />
+            <Dessert name="Haagen Dazs Caramel Cone" price="7.00" />
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
